@@ -8,6 +8,11 @@ from telethon.tl.functions.messages import GetHistoryRequest
 from telethon.tl.types import PeerChannel
 # import socks
 
+try:
+    os.mkdir("data") 
+except OSError as error: 
+    print(error)
+
 class DateTimeEncoder(json.JSONEncoder):
     def default(self, o):
         if isinstance(o, datetime):
@@ -73,7 +78,7 @@ async def main(phone):
             break
 
     with open(
-        os.path.dirname(os.path.abspath(__file__)) + f"/channel_{file_name}.json", "w"
+        os.path.dirname(os.path.abspath(__file__)) + f"/data/channel_{file_name}.json", "w"
     ) as outfile:
         json.dump(all_messages, outfile, cls=DateTimeEncoder)
 
