@@ -1,4 +1,4 @@
-# Data Crawlers Repository
+# Data Crawlers
 
 This repository contains a collection of data crawlers designed to extract information from various sources on the web and social media platforms. Feel free to use, modify, or contribute.
 
