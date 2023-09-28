@@ -1,5 +1,7 @@
-# MacOS
+# Dirs
 .DS_Store
+.vscode
+data 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -7,6 +9,7 @@ __pycache__/
 *$py.class
 *.session
 *.session-journal
+*.json
 
 # C extensions
 *.so
