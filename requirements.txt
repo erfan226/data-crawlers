@@ -1,0 +1,4 @@
+python-dotenv
+Telethon
+PySocks
+async-timeout
